@@ -1,0 +1,5 @@
+def app(environ, respond):
+    respond('200 OK', [('Content-type', 'text/plain; charset=utf-8')])
+    yield "Hello €nviron😞!\n\n".encode('utf-8')
+    for key in environ:
+        yield ("%s: %s\n" % (key, environ[key])).encode('utf-8')
