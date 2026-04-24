@@ -11,7 +11,7 @@ def nayta_tulos():
 @app.route("/")
 def hello_world():
     return """
-        <h1>Tervetuloa</h1>
+        <h1>Joo</h1>
         <form action="/tulos"enctype="application/x-www-urlencoded">
         Haku: <input name=tuolit type=text> 
         <input type=submit value="Hae">
